@@ -1,0 +1,9 @@
+# ReversingLabs Upload Configuration
+# Rename this file to rl_upload.conf and fill in your values.
+# rl_upload.conf is gitignored -- your credentials stay local.
+
+export RL_HOST="https://your-a1000-instance"
+export RL_TOKEN="your-api-token"
+export RL_PATH="/path/to/samples"
+export RL_RECURSIVE="no"
+export RL_SLEEP="2"
