@@ -1,0 +1,12 @@
+name: Security Scans
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  codeql:
+    uses: 8linkz-sec/.github/.github/workflows/codeql-python.yml@main
+    secrets:
+      DISCORD_VULN: ${{ secrets.DISCORD_VULN }}
+    permissions:
+      security-events: write
